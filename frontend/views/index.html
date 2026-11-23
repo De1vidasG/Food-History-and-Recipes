@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Edible Atlas | Fun way to learn cooking!</title>
+    <title>The Edible Atlas | Explode world cuisines!</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,6 +17,10 @@
       type="image/x-icon"
       href="/public/assets/favicon.ico"
     />
+    <script
+      src="https://kit.fontawesome.com/c9d0dda21e.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <!-- 1. LOGO/NAME 2. Map,History,Recipes,About 3. Search bar  -->
   <body>
@@ -32,21 +36,31 @@
             <span class="brand-title">The Edible Atlas</span>
           </a>
 
-          <ul class="navbar-list">
-            <li class="navbar-item"><a href="#">Map</a></li>
-            <li class="navbar-item"><a href="#">Recipes</a></li>
-            <li class="navbar-item"><a href="#">History</a></li>
-            <li class="navbar-item"><a href="#">About</a></li>
-          </ul>
-          <form class="navbar-search" action="#">
-            <input
-              class="search"
-              type="search"
-              placeholder="Search a country or a dish"
-            />
-          </form>
+          <button class="hamburger-btn" type="button" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <div id="hamburger-menu">
+            <ul class="navbar-list">
+              <li class="navbar-item"><a href="#">Map</a></li>
+              <li class="navbar-item"><a href="#">Recipes</a></li>
+              <li class="navbar-item"><a href="#">History</a></li>
+              <li class="navbar-item"><a href="#">About</a></li>
+            </ul>
+            <form class="navbar-search" action="#">
+              <input
+                class="search"
+                type="search"
+                placeholder="Search a country or a dish"
+              />
+              <button class="search-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </div>
         </nav>
       </div>
     </header>
+    <script src="../js/main.js"></script>
   </body>
 </html>

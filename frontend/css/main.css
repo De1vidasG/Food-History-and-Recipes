@@ -12,13 +12,14 @@
 
 .navbar {
   background-color: var(--color-primary);
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   font-family: "Agrave Pro", "Times New Roman", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
+  padding: 0px 15px;
+  justify-content: space-between;
 }
 
 .navbar-brand {
@@ -34,18 +35,43 @@
 .brand-image {
   width: 65px;
 }
-.navbar-list {
+
+.hamburger-btn {
+  padding: 8px;
+  color: var(--color-text);
+  background-color: var(--color-primary);
+  border: none;
+  font-size: 1.5rem;
+}
+
+#hamburger-menu {
+  display: none;
+  width: 100%;
+  margin-top: 15px;
+}
+#hamburger-menu.open {
   display: flex;
-  align-items: center;
-  gap: 30px;
+  flex-direction: column;
+}
+
+.navbar-list li {
   list-style: none;
+  padding: 3px 0;
 }
 .navbar-list a {
   color: var(--color-text);
   text-decoration: none;
-  font-size: 1.15rem;
+  font-size: 1.45rem;
+  padding: 8px 8px;
+  display: flex;
+  border-radius: 12px;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+.navbar-list a:hover {
+  background-color: var(--color-accents);
+  color: var(--color-primary);
 }
 
-.navbar-search {
-  justify-self: end;
-}
+/* MAIN SEARCH BUTTON */
