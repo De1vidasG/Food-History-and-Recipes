@@ -31,6 +31,7 @@ body {
   text-decoration: none;
   color: var(--color-text);
 }
+
 .brand-title {
   font-size: 1.5rem;
 }
@@ -52,6 +53,7 @@ body {
   width: 100%;
   margin-top: 15px;
 }
+
 #hamburger-menu.open {
   display: flex;
   flex-direction: column;
@@ -61,6 +63,7 @@ body {
   list-style: none;
   padding: 3px 0;
 }
+
 .navbar-list a {
   color: var(--color-text);
   text-decoration: none;
@@ -74,10 +77,10 @@ body {
 }
 
 /* do active and focus,hover states where it matters | not mobile */
-.navbar-list a:hover {
+/*.navbar-list a:hover {
   background-color: var(--color-accents);
   color: var(--color-primary);
-}
+}*/
 
 /* MAIN SEARCH BUTTON */
 .navbar-search {
