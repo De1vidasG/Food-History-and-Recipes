@@ -69,7 +69,7 @@ body {
   text-decoration: none;
   font-size: 1.45rem;
   padding: 8px 15px;
-  margin: 0 -15px;
+  margin: 0 -10px;
   display: flex;
   border-radius: 12px;
   transition:
@@ -78,7 +78,6 @@ body {
 }
 
 /* do active and focus,hover states where it matters | not mobile */
-
 /*
  .navbar-list a:hover {
   background-color: var(--color-accents);
