@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Edible Atlas | Explore world cuisines!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agrave+Pro:wght@100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link
+      rel="icon"
+      sizes="16x16 32x32 48x48"
+      type="image/x-icon"
+      href="/public/assets/favicon.ico"
+    />
+  </head>
+  <!-- 1. LOGO/NAME 2. Map,History,Recipes,About 3. Search bar  -->
+  <body>
+    <header class="navigation">
+      <div class="container">
+        <nav class="navbar">
+          <a class="navbar-brand" href="index.html">
+            <img
+              class="brand-image"
+              src="/public/assets/images/brand.png"
+              alt="brand logo"
+            />
+            <span class="brand-title">The Edible Atlas</span>
+          </a>
+
+          <button
+            class="hamburger-btn"
+            type="button"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <div id="hamburger-menu">
+            <ul class="navbar-list">
+              <li class="navbar-item"><a href="map.html">Map</a></li>
+              <li class="navbar-item"><a href="recipes.html">Recipes</a></li>
+              <li class="navbar-item"><a href="history.html">History</a></li>
+              <li class="navbar-item"><a href="about.html">About</a></li>
+            </ul>
+            <form class="navbar-search" action="#">
+              <input
+                class="search"
+                type="search"
+                placeholder="Search a country or a dish"
+              />
+              <button class="search-button" type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <script src="../js/main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c9d0dda21e.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

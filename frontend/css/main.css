@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Agrave Pro", "Times New Roman", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --color-primary: #321e16;
+  --color-accents: #90a781;
+  --color-text: #f5efe6;
+}
+
+.navbar {
+  background-color: var(--color-primary);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 5px 15px;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.brand-title {
+  font-size: 1.5rem;
+}
+
+.brand-image {
+  width: 65px;
+}
+
+.hamburger-btn {
+  padding: 8px;
+  color: var(--color-text);
+  background-color: var(--color-primary);
+  border: none;
+  font-size: 1.5rem;
+}
+
+#hamburger-menu {
+  display: none;
+  width: 100%;
+  margin-top: 15px;
+}
+
+#hamburger-menu.open {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-list li {
+  list-style: none;
+  padding: 3px 0;
+}
+
+.navbar-list a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 1.45rem;
+  padding: 8px 15px;
+  margin: 0 -15px;
+  display: flex;
+  border-radius: 12px;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+/* do active and focus,hover states where it matters | not mobile */
+
+/*
+ .navbar-list a:hover {
+  background-color: var(--color-accents);
+  color: var(--color-primary);
+} 
+*/
+
+/* MAIN SEARCH BUTTON */
+.navbar-search {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 16px;
+  gap: 10px;
+}
+
+.search {
+  padding: 0 10px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--color-accents);
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.search-button {
+  background-color: var(--color-accents);
+  border: none;
+  color: var(--color-primary);
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 14px;
+  font-size: 1rem;
+}
